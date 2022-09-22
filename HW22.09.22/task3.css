@@ -1,0 +1,35 @@
+h1, h2
+{
+	text-align: center;
+}
+article
+{
+	font-size: 18px;
+}
+code
+{
+	background: #DEDEDE;
+	color: #C60000;
+}
+.term
+{
+	font-weight: bolder;
+}
+.code
+{
+	color: black;
+}
+pre
+{
+	background: #DEDEDE;
+}
+footer
+{
+	font-weight: bolder;
+}
+.tag
+{
+	background: #DEDEDE;
+	color: #00B284;
+	font-weight:lighter;
+}

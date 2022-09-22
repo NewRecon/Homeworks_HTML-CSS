@@ -1,0 +1,23 @@
+.deck
+{
+	display: flex;
+	margin-bottom: 50px;
+}
+.card_black
+{
+	font-size: 48px;
+	background: silver;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.card_red
+{
+	font-size: 48px;
+	background: silver;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	color: #C60000;
+}
