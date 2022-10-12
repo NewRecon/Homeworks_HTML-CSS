@@ -28,11 +28,6 @@ footer
 	float: left;
 }
 
-.product:hover
-{
-	background: red;
-}
-
 img
 {
 	margin-bottom: 20px;
