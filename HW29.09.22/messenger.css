@@ -1,0 +1,229 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	background: #171821;
+}
+
+@font-face
+{
+	font-family: 'Inter-Bold';
+	src: url(fonts/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face
+{
+	font-family: 'Inter-Light';
+	src: url(fonts/Inter/static/Inter-Light.ttf);
+}
+
+body
+{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+	display: flex;
+	justify-content: flex-end;
+	height: 89px;
+}
+
+.logo
+{
+	position: absolute;
+	width: 75px;
+	height: 54px;
+	left: 22px;
+	top: 18px;
+
+	font-family: 'Inter-Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 54px;
+
+	color: #FFFFFF;
+}
+
+.dot
+{
+	color: #25D366;
+}
+
+.search_area .searh_logo .circle
+{
+	position: absolute;
+	top: 33px;
+	left: 200px;
+	height: 20px;
+	width: 20px;
+	border: solid #B5BFD6 2px;
+	border-radius: 50%;
+}
+
+.search_area .searh_logo .line
+{
+	position: absolute;
+	top: 56px;
+	left: 218px;
+	height: 0;
+	width: 8px;
+	border: solid #B5BFD6 1px;
+	transform: rotate(45deg);
+}
+
+.search_info
+{
+	position: absolute;
+	width: 271px;
+	height: 19px;
+	left: 234px;
+	top: 37px;
+
+	font-family: 'Inter-Light';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #474B54;
+}
+
+.profile
+{
+	display: flex;
+	width: 297px;
+	height: 45px;
+	margin-top: 23px;
+	margin-right: 84px; 
+	align-items: center;
+	font-family: 'Inter-Light';
+	font-size: 16px;
+	color: #B5BFD6;
+}
+
+.profile .bell
+{
+	margin-right: 31px;
+}
+
+.profile .photo
+{
+	margin-right: 12px;
+}
+
+.profile .drop
+{
+	margin-left: 36px;
+}
+
+hr
+{
+	border: none;
+	border-top: solid #393636 2px;
+}
+
+article
+{
+	display: flex;
+}
+
+.sidebar
+{
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: 126px;
+
+	height: 100vh;
+
+	border-right: solid #393636 2px;
+}
+
+.messenges_info
+{
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: 438px;
+
+	height: 100vh;
+
+	border-right: solid #393636 2px;
+}
+
+.conversation
+{
+	flex-basis: 500px;
+	flex-shrink: 0;
+	flex-grow: 1;
+
+	height: 100vh;
+
+	border-right: solid #393636 2px;
+}
+
+.shared_media
+{
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: 425px;
+
+	height: 100vh;
+}
+
+.shared_media:hover
+{
+	visibility: visible;
+	flex-basis: 425px;
+}
+
+.box1
+{
+	height: 15.5vh;
+	width: 100%;
+	border-bottom: 2px solid #393636;
+}
+
+.plus
+{
+	visibility: collapse;
+	flex-basis: 0px;
+}
+
+@media screen and (max-width: 950px)
+{
+	.bell, .photo, .name
+	{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 1500px)
+{
+	.shared_media
+	{
+		visibility: hidden;
+		flex-basis: 0px;
+	}
+	.conversation
+	{
+		flex-grow: 1;
+		flex-shrink: 0;
+	}
+	.plus
+	{
+		visibility: visible;
+		flex-basis: 30px;
+	}
+}
+
+@media screen and (max-width: 1200px)
+{
+	.messenges_info
+	{
+		visibility: hidden;
+		flex-shrink: 1;
+		flex-basis: 0px;
+	}
+}
